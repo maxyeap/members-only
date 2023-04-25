@@ -27,6 +27,11 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Devise is a flexible authentication solution for Rails based on Warden https://github.com/heartcombo/devise#starting-with-rails
+gem 'devise'
+
+gem 'responders'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
