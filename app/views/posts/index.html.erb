@@ -1,0 +1,12 @@
+<h1>Posts</h1>
+<%= link_to "Create New Post",  new_post_path %>
+<ul id="posts">
+  <%= render @posts %>
+</ul>
+
+<% if user_signed_in? %>
+  <p>You're currently logged in as <b><%= current_user.email %></b></p>
+  <%= link_to "Log Out", destroy_user_session_path, data: { turbo_method: :delete }%>
+<% else %>
+  <%= link_to "Log In",  new_user_session_path %>
+<% end %>

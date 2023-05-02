@@ -1,0 +1,11 @@
+<%= form_with model: @post do |form| %>
+  <%= form.label(:title, "Title") %>
+  <%= form.text_field(:title, placeholder: "Title") %>
+  <br><br>
+  <%= form.label(:body, "Body") %>
+  <%= form.text_area(:body, placeholder: "Body") %>
+  <br><br>
+  <%= form.submit "Create" %>
+<% end %>
+<br><br>
+<%= link_to "Back to home",   root_path %>
